@@ -19056,4 +19056,24 @@ body {
 
 .font-en {
   font-family: "Kalam", cursive;
+}
+
+.header {
+  height: 635px;
+  background-image: url(../images/home_mobile.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 992px) {
+  .header {
+    height: 810px;
+    background-image: url(../images/home.png);
+  }
+}
+@media (min-width: 1400px) {
+  .header {
+    height: 1080px;
+    background-image: url(../images/home.png);
+  }
 }/*# sourceMappingURL=all.css.map */
