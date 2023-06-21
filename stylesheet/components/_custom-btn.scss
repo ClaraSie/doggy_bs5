@@ -1,0 +1,7 @@
+.btn-outline-secondary{
+    &:hover, &:active, &:first-child:active {
+        background-color: $primary;
+        border-color: $primary;
+        color: $secondary;
+    }
+}
