@@ -2,7 +2,7 @@
     height: 635px;
     background-image: url(../images/home_mobile.png);
     background-size: cover; // 完整顯示圖片
-    background-position: center center; //繞圖片從中下方開始顯示
+    background-position: top center; //繞圖片從中下方開始顯示
 }
 @include media-breakpoint-up(lg){
     .header{
