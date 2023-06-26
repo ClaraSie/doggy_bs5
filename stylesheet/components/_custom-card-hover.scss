@@ -1,0 +1,15 @@
+.custom-card-hover {
+    position: relative;
+    &-content{
+        display: none;
+    }
+    &:hover > &-content{
+        display: flex;
+        position: absolute;
+        background :transparent linear-gradient(180deg, #00000000 0%, #0000005D 100%) 0% 0% no-repeat;       
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}

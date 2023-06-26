@@ -11,19 +11,19 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
     <!-- custom -->
     <link rel="stylesheet" href="stylesheet/all.css">
     <title>撿到寶</title>
 </head>
-<body class="position-relative ">
+<body>
     <a href="#" class="fixed-lg-bottom d-none d-lg-block text-decoration-none">
         <div class="d-flex flex-column align-items-center">
             <span class="drawme-content position-relative fw-bold text-secondary py-2 px-4 bg-white rounded-2 border border-secondary border-2 mb-3">客製我的毛孩圖</span>
             <div class="drawme-img"></div>
         </div>
     </a>
-    
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 py-lg-4">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -59,7 +59,7 @@
     <section class="container py-5">
         <div class="row align-items-center flex-row-reverse">
             <div class="col-lg-5">
-                <p class="font-en text-primary fs-4 mb-0 text-center text-lg-start">Service</p>
+                <p class="font-en fw-bold text-primary fs-4 mb-0 text-center text-lg-start">Service</p>
                 <h2 class="text-secondary fs-2 lh-lg fw-bold mb-4 mb-lg-3 text-center text-lg-start">
                     您出錢 我出力<br class="d-lg-none"> 一起助浪浪
                 </h2>
@@ -81,24 +81,46 @@
         <img src="images/title01.png" alt="近期作品" class="img-fluid mx-auto d-block mb-4 mb-lg-5">
         <div class="row row-cols-2 row-cols-lg-4 mb-4 mb-lg-5 g-3 g-lg-4">
             <div class="col">
-                <img src="images/05.png" alt="dog" class="rounded-5 img-fluid">
+                <div class="custom-card-hover">
+                    <img src="images/05.png" alt="dog" class="rounded-5 img-fluid">
+                    <div class="custom-card-hover-content font-en p-4 rounded-5 text-white flex-column justify-content-end">
+                        <p class="mb-0">designer</p>
+                        <p class="mb-0 fs-4 fw-bold">Meili</p>
+                    </div>
+                </div>
             </div>
             <div class="col">
-                <img src="images/07.png" alt="cat" class="rounded-5 img-fluid">
+                <div class="custom-card-hover">
+                    <img src="images/07.png" alt="cat" class="rounded-5 img-fluid">
+                    <div class="custom-card-hover-content font-en p-4 rounded-5 text-white flex-column justify-content-end">
+                        <p class="mb-0">designer</p>
+                        <p class="mb-0 fs-4 fw-bold">Sandy</p>
+                    </div>
+                </div>
             </div>
             <div class="col">
-                <img src="images/06.png" alt="dog" class="rounded-5 img-fluid">
+                <div class="custom-card-hover">
+                    <img src="images/06.png" alt="dog" class="rounded-5 img-fluid">
+                    <div class="custom-card-hover-content font-en p-4 rounded-5 text-white flex-column justify-content-end">
+                        <p class="mb-0">designer</p>
+                        <p class="mb-0 fs-4 fw-bold">Queen</p>
+                    </div>
+                </div>
             </div>
             <div class="col">
-                <img src="images/Michael.png" alt="dog" class="rounded-5 img-fluid">
+                <div class="custom-card-hover">
+                    <img src="images/Michael.png" alt="dog" class="rounded-5 img-fluid">
+                    <div class="custom-card-hover-content font-en p-4 rounded-5 text-white flex-column justify-content-end">
+                        <p class="mb-0">designer</p>
+                        <p class="mb-0 fs-4 fw-bold">Tim</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="text-center">
             <a class="btn btn-lg btn-outline-secondary mx-3" href="#">查看更多作品</a>
             <a class="btn btn-lg btn-primary d-none d-lg-inline-block mx-3" href="#">客製毛孩似顏繪</a>
         </div>
-    <!-- todo: img hover顯示 -->
-
     </section>
 </body>
 </html>

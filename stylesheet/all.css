@@ -19122,4 +19122,19 @@ body {
     left: calc(50% - 15px);
     bottom: -27px;
   }
+}
+.custom-card-hover {
+  position: relative;
+}
+.custom-card-hover-content {
+  display: none;
+}
+.custom-card-hover:hover > .custom-card-hover-content {
+  display: flex;
+  position: absolute;
+  background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3647058824) 100%) 0% 0% no-repeat;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }/*# sourceMappingURL=all.css.map */
