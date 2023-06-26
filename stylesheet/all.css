@@ -19082,4 +19082,44 @@ body {
     height: 1080px;
     background-image: url(../images/home.png);
   }
+}
+@media (min-width: 1200px) {
+  .fixed-lg-bottom {
+    position: fixed;
+    right: 60px;
+    bottom: 0;
+    z-index: 1030;
+  }
+  .drawme-img {
+    background-image: url(../images/btn2.png);
+    width: 140px;
+    height: 152px;
+  }
+  .drawme-img:hover {
+    background-image: url(../images/btn.png);
+  }
+  .drawme-content::before {
+    content: "";
+    height: 0;
+    width: 0px;
+    border-color: #3A3A3A transparent transparent;
+    border-style: solid solid solid;
+    border-width: 15px 15px 15px 15px;
+    bottom: -30px;
+    /* 必須指定，否則會變梯形 */
+    position: absolute;
+    left: calc(50% - 15px);
+  }
+  .drawme-content::after {
+    border-color: #fff transparent transparent;
+    border-style: solid solid solid solid;
+    border-width: 15px;
+    content: "";
+    height: 0px;
+    width: 0;
+    /* 必須指定，否則會變梯形 */
+    position: absolute;
+    left: calc(50% - 15px);
+    bottom: -27px;
+  }
 }/*# sourceMappingURL=all.css.map */

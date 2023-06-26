@@ -1,0 +1,44 @@
+@media (min-width: 1200px) {
+    .fixed-lg-bottom {
+        position: fixed;
+        right: 60px;
+        bottom: 0;
+        z-index: 1030;
+    }
+    // 畫我圖示&hover
+    .drawme-img{
+        background-image: url(../images/btn2.png);
+        width: 140px;
+        height: 152px;
+        &:hover{
+            background-image: url(../images/btn.png);  
+        }
+    }
+    // 畫我圖示上的對話框
+    .drawme-content{
+        &::before{
+            content: "";
+            height: 0;
+            width: 0px;
+            border-color: $secondary transparent transparent;
+            border-style: solid solid solid; 
+            border-width: 15px 15px 15px 15px; 
+            bottom: -30px;
+            /* 必須指定，否則會變梯形 */
+            position: absolute;
+            left: calc( 50% - 15px );
+        }
+        &::after{
+            border-color: $white transparent transparent; 
+            border-style: solid solid solid solid; 
+            border-width: 15px; 
+            content: "";
+            height: 0px;
+            width: 0;
+            /* 必須指定，否則會變梯形 */
+            position: absolute;
+            left: calc( 50% - 15px );
+            bottom: -27px;
+        }
+    }
+}
