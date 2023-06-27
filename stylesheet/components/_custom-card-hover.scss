@@ -13,3 +13,22 @@
         right: 0;
     }
 }
+
+// 領養專區
+.card-switch{
+    box-shadow: $box-shadow-sm;
+    &:hover{
+        box-shadow: $box-shadow;
+    }
+    &:hover a{
+        color: $primary;
+    }
+    // hover更換圖片
+    // hover時，.switch-img-hover顯示，switch-img隱藏
+    .switch-img-hover, &:hover .switch-img{
+        display: none;
+    }
+    &:hover .switch-img-hover{
+        display: block;
+    }
+}

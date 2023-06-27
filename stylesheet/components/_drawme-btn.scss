@@ -4,16 +4,17 @@
         right: 60px;
         bottom: 0;
         z-index: 1030;
-    }
-    // 畫我圖示&hover
-    .drawme-img{
-        background-image: url(../images/btn2.png);
-        width: 140px;
-        height: 152px;
-        &:hover{
+        // 畫我圖示&hover
+        .drawme-img{
+            background-image: url(../images/btn2.png);
+            width: 140px;
+            height: 152px;
+        }
+        &:hover .drawme-img{
             background-image: url(../images/btn.png);  
         }
     }
+
     // 畫我圖示上的對話框
     .drawme-content{
         &::before{

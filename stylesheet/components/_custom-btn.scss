@@ -5,3 +5,8 @@
         color: $secondary;
     }
 }
+.btn-hover-shadow{
+    &:hover{
+        box-shadow: 0px 3px 0px $secondary;
+    }
+}
