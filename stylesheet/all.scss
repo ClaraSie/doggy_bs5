@@ -30,9 +30,12 @@
 
 // 8. Add additional custom code here
 //base
+@import "./base/base";
 @import "./base/typography";
 // components
+@import "./components/banner";
 @import "./components/custom-btn";
 @import "./components/header";
 @import "./components/drawme-btn";
 @import "./components/custom-card-hover";
+@import "./components/steps";

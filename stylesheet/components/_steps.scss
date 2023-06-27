@@ -1,0 +1,8 @@
+.steps-img {
+    width: 100px;
+}
+@include media-breakpoint-up(lg){
+    .steps-img {
+        width: 204px;
+    }
+}
