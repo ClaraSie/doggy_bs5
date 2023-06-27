@@ -20230,6 +20230,10 @@ body {
     background-image: url(../images/banner@2x.png);
   }
 }
+.banner {
+  height: 380px;
+}
+
 .btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:first-child:active {
   background-color: #F9C745;
   border-color: #F9C745;
