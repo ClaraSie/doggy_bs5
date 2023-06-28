@@ -9,7 +9,7 @@
         background-image: url(../images/banner@2x.png);
     }
 }
-@include media-breakpoint-up(xll){
+@include media-breakpoint-up(xxl){
     .banner{
         height: 380px;
     }
