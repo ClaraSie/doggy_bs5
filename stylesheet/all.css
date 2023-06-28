@@ -20363,19 +20363,28 @@ body {
     width: 204px;
   }
 }
-.nav-dash .nav-link {
-  padding: 8px 0px;
-  margin-left: -24px;
-  transition: 0.5s;
-}
-.nav-dash .nav-link i {
-  opacity: 0;
-}
-.nav-dash .nav-link.active, .nav-dash .nav-link:hover {
-  margin-left: 0;
-  transition: 0.5s;
+.nav-dash .nav-link.active {
   color: #F9C745;
 }
-.nav-dash .nav-link.active i, .nav-dash .nav-link:hover i {
-  opacity: 1;
+.nav-dash i {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .nav-dash .nav-link {
+    padding: 8px 0px;
+    margin-left: -24px;
+    transition: 0.5s;
+  }
+  .nav-dash .nav-link i {
+    display: inline-block;
+    opacity: 0;
+  }
+  .nav-dash .nav-link.active, .nav-dash .nav-link:hover {
+    margin-left: 0;
+    transition: 0.5s;
+  }
+  .nav-dash .nav-link.active i, .nav-dash .nav-link:hover i {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=all.css.map */
