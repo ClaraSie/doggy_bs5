@@ -1,16 +1,17 @@
 .custom-card-hover {
     position: relative;
     &-content{
-        display: none;
-    }
-    &:hover > &-content{
-        display: flex;
+        opacity: 0;
         position: absolute;
-        background :transparent linear-gradient(180deg, #00000000 0%, #0000005D 100%) 0% 0% no-repeat;       
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
+    }
+    &:hover > &-content{
+        transition: .5s;
+        opacity: 1;
+        background :transparent linear-gradient(180deg, #00000000 0%, #0000005D 100%) 0% 0% no-repeat;       
     }
 }
 
@@ -25,10 +26,18 @@
     }
     // hover更換圖片
     // hover時，.switch-img-hover顯示，switch-img隱藏
+    .switch-img-hover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
     .switch-img-hover, &:hover .switch-img{
-        display: none;
+        opacity: 0;
+        transition: .5s;
     }
     &:hover .switch-img-hover{
-        display: block;
+        opacity: 1;
     }
 }

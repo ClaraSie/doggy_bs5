@@ -1,0 +1,8 @@
+.custom-title{
+    width: 149px;
+}
+@include media-breakpoint-up(lg){
+    .custom-title{
+        width: 250px;
+    }
+}

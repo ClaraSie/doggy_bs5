@@ -1,0 +1,20 @@
+.nav-dash{
+    .nav-link{
+        padding: 8px 0px;
+        margin-left: -24px;
+        transition: .5s;
+        // 一開始先隱藏dash
+        i{
+            opacity: 0;
+        }
+        // hover or active時顯示dash，並把左推的margin-left回正，讓<li>有右移的動畫
+        &.active,&:hover{
+            margin-left: 0;
+            transition: .5s;
+            color: $primary;
+            i{
+                opacity: 1;
+            }
+        }
+    }
+}
