@@ -20345,6 +20345,19 @@ body {
   opacity: 1;
 }
 
+.card-scaled:hover {
+  transition: 1s;
+  transform: scale(1.85, 1.85);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  z-index: 0;
+}
+
+@media (min-width: 992px) {
+  .card-scaled:hover {
+    transform: scale(1);
+  }
+}
 .custom-title {
   width: 149px;
 }

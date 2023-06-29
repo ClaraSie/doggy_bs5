@@ -36,8 +36,9 @@
 @import "./components/banner";
 @import "./components/custom-btn";
 @import "./components/header";
-@import "./components/drawme-btn";
-@import "./components/custom-card-hover";
+@import "./components/drawme-btn"; //首頁右下角常駐圖示
+@import "./components/custom-card-hover"; 
+@import "./components/card-scaled"; //設計作品card縮放
 @import "./components/titles";
-@import "./components/steps";
-@import "./components/nav-link";
+@import "./components/steps"; //服務介紹step
+@import "./components/nav-link"; //設計作品左側nav
