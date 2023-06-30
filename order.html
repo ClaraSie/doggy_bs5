@@ -16,6 +16,160 @@
     <title>撿到寶 - 服務購買</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 py-lg-4 border-bottom border-bottom-md-0 border-3  border-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" height="40">               
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" aria-current="page" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="serviceIntro.html">服務介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="produce.html">設計作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="adopt.html">領養專區</a>
+                    </li>
+                    <li>
+                        <a href="order.html" aria-current="page" class="btn btn-primary btn-hover-shadow text-secondary px-5 py-2 ms-lg-4">毛孩似顏繪</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- banner -->
+        <section class="container-fluid py-4 py-lg-0">
+            <div class="banner img-fluid"></div>
+        </section>
+        <!-- form -->
+        <section class="container pt-3 pb-5 py-lg-80">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <form action="" class="bg-white shadow rounded border-top border-5 border-primary px-3 py-4 py-lg-5 px-lg-4">
+                        <h2 class="fs-5 fw-bold text-center mb-80">填寫訂購資訊</h2>
+                        <div class="row gy-3">
+                            <div class="col-lg-6">
+                                <label for="secondName" class="form-label">名字</label>
+                                <input type="text" class="form-control" id="secondName">    
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="firstName" class="form-label">姓氏</label>
+                                <input type="text" class="form-control" id="firstName">    
+                            </div>
+                            <div>
+                                <label for="phone" class="form-label">手機號碼</label>
+                                <input type="tel" class="form-control" id="phone">    
+                            </div>
+                            <div>
+                                <label for="email" class="form-label">電子郵件</label>
+                                <input type="email" class="form-control" id="email">    
+                            </div>
+                            <div>
+                                <label for="address" class="form-label">收件地址</label>
+                                <div class="row gy-2">
+                                    <div class="col-lg-6">
+                                        <select class="form-select" aria-label="請選擇城市">
+                                            <option selected>請選擇城市</option>
+                                            <option value="台北市">台北市</option>
+                                            <option value="台中市">台中市</option>
+                                            <option value="高雄市">高雄市</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-select" aria-label="請選擇區域">
+                                            <option selected>請選擇區域</option>
+                                            <option value="東區">東區</option>
+                                            <option value="北區">北區</option>
+                                            <option value="南區">南區</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <input type="text" class="form-control" id="address" placeholder="請輸入詳細地址">    
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="designer" class="form-label">選擇設計師風格</label>
+                                <select class="form-select" aria-label="選擇設計師風格" id="designer">
+                                    <option value="Meili" selected>Meili</option>
+                                    <option value="Zoe">Zoe</option>
+                                    <option value="Michael">Michael</option>
+                                    <option value="Birdy">Birdy</option>
+                                </select>   
+                            </div>
+                            <div>
+                                <label for="payment" class="form-label">付款方式</label>
+                                <select class="form-select" aria-label="付款方式" id="payment">
+                                    <option value="貨到付款" selected>貨到付款</option>
+                                    <option value="LinePay">LinePay</option>
+                                    <option value="ApplePay">ApplePay</option>
+                                </select>   
+                            </div>
+                            <div>
+                                <label for="gift" class="form-label">加購服務</label>
+                                <div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="gift1" value="gift1">
+                                        <label class="form-check-label" for="gift1">送禮用包裝+100</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="gift2" value="gift2">
+                                        <label class="form-check-label" for="gift2">無框畫+250</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-lg-5">
+                                <label for="remark" class="form-label">備註說明</label>
+                                <textarea class="form-control" id="remark" rows="3"></textarea>
+                            </div>
+                            <h3 class="fs-5 fw-bold text-center">總金額 NT$ 300</h3>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg fs-5">送出訂購資訊</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="bg-white py-5 border-top border-3 border-primary">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-2 gy-5 gy-lg-0 gx-lg-3">
+                    <div class="col d-flex align-items-center justify-content-center flex-column flex-lg-row">
+                        <img src="images/link01.png" alt="加入奴才團隊" class="img-fluid mx-4">
+                        <div class="d-flex align-items-center align-items-lg-start flex-column mt-4 mt-lg-0">
+                            <h4>加入奴才團隊</h4>
+                            <p>我也會畫畫，希望能盡一份心力！</p>
+                            <a class="btn btn-lg btn-outline-secondary" href="#">聯絡我們</a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center flex-column flex-lg-row">
+                        <img src="images/link02.png" alt="加入奴才團隊" class="img-fluid mx-4">
+                        <div class="d-flex align-items-center align-items-lg-start flex-column mt-4 mt-lg-0">
+                            <h4>加入奴才團隊</h4>
+                            <p>我也會畫畫，希望能盡一份心力！</p>
+                            <a class="btn btn-lg btn-outline-secondary" href="#">領養專區</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary text-white text-center py-4">
+            <span class="fs-7 fs-lg-6">Copyright © 2021 撿到寶.All rights reserved.</span>
+        </div>
+    </footer>
 </body>
 </html>
